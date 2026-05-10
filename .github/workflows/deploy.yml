@@ -37,8 +37,8 @@ jobs:
       - name: Install dependencies
         run: npm install
         env:
-          TRELLO_KEY: ${{ vars.VITE_TRELLO_KEY }}
-          TRELLO_TOKEN: ${{ vars.VITE_TRELLO_TOKEN }}
+          VITE_TRELLO_KEY: ${{ vars.VITE_TRELLO_KEY }}
+          VITE_TRELLO_KEY: ${{ vars.VITE_TRELLO_TOKEN }}
       - name: Build
         run: npm run build -- --base "${{ steps.pages.outputs.base_path }}"
       - name: Setup Pages
